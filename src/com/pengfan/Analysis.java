@@ -1,7 +1,7 @@
 package com.pengfan;
 
 //System keyword : const end while if then var procedure begin ood  call read write
-//end :     ;  :  #  (  )
+//endOpts :     ;  :  #  (  ) { }
 //singleOpts:  +, -, *, /, =, >, <
 //doubleOpts:  :=, <=, >=, <>
 
@@ -347,7 +347,7 @@ public class Analysis {
      */
     private boolean isEndOpts(String word) {
         boolean flag = false;
-        String[] endOpts = {";", "#", "(", ")", ":"};
+        String[] endOpts = {";", "#", "(", ")", ":", "{", "}"};
         for(int i=0;i<endOpts.length;i++)
             if(word.equals(endOpts[i]))
                 flag = true;

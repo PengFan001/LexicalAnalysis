@@ -12,7 +12,7 @@ package com.pengfan;
 //While——循环语句；
 //Read——读文件语句；
 //Write——写文件语句；
-//end :     ;  :  #  (  )
+//endOpts :     ;  :  #  (  ) { }
 //singleOpts:  +, -, *, /, =, >, <
 //doubleOpts:  :=, <=, >=, <>
 //ID   用户自己定义的字符变量
@@ -130,29 +130,37 @@ public class Sym {
                 sortType = "等号";
                 sortNum = 23;
                 break;
+            case "{":
+                sortType = "左大括号";
+                sortNum = 24;
+                break;
+            case "}":
+                sortType = "右大括号";
+                sortNum = 25;
+                break;
             case ":=":
                 sortType = "赋值";
-                sortNum = 24;
+                sortNum = 26;
                 break;
             case ">=":
                 sortType = "大于等于";
-                sortNum = 25;
+                sortNum = 27;
                 break;
             case "<=":
                 sortType = "小于等于";
-                sortNum = 26;
+                sortNum = 28;
                 break;
             case "<>":
                 sortType = "不等于";
-                sortNum = 27;
+                sortNum = 29;
                 break;
             case "ID":
                 sortType = "自定义变量";
-                sortNum = 28;
+                sortNum = 30;
                 break;
             case "NUM":
                 sortType = "自定义数据";
-                sortNum = 29;
+                sortNum = 31;
                 break;
         }
 
